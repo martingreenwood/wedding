@@ -1,0 +1,8 @@
+name: 'Martin Greenwood'
+super: true
+id: 9238cd4a-3563-483f-856d-8ff247442ab8
+password_hash: $2y$10$TH9FWhTVrxhlWamzU3id0ex45j3.thtFb96oi2M9V8f4AV.qp679W
+preferences:
+  collections:
+    pages:
+      after_save: continue_editing

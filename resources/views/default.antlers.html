@@ -1,0 +1,131 @@
+{{#
+	@name Default
+	@desc The default template with an outer wrapper grid as defined in tailwind.config.js. It makes sure all blocks on a page get evenly spaced without having to worry about margins or paddings.
+#}}
+<main class="page ml-6 mr-6 md:ml-12 md:mr-12" id="content">
+
+	<div class="page-intro flex flex-col items-center justify-center text-center mt-40 mb-40">
+		<h2 class="mb-6 text-4xl uppercase md:mb-4 md:text-5xl">
+			REQUEST THE PLEASURE OF YOUR COMPANY AT
+		</h2>
+		<h3 class="mb-0 text-4xl font-serif md:text-5xl">
+			Their Wedding Celebration
+		</h3>
+	</div>
+
+	<div class="page-section grid grid-cols-12 mb-40 mr-auto ml-auto md:w-2/3 ">
+		<div class="page-section--inner bg-white p-10 pb-40 md:p-20 md:pb-40 shadow col-start-1 col-end-13 text-center relative">
+			<h3 class="text-5xl font-serif mb-10">
+                When
+            </h3>
+			<p class="text-2xl">Saturday, 5th November 2022<br>
+			12:30PM for 1PM CEROMONY</p>
+            <div class="pumpkin-1 absolute right-0 bottom-0 transform translate-y-16 -mt-12 w-60 h-60 bg-contain bg-no-repeat">
+                {{ partial:snippets/background_image image="assets/pumpkin-1.png" class="pumpkin-1" }}
+            </div>
+		</div>
+	</div>
+
+	<div class="page-section grid grid-cols-12 mb-40 mr-auto ml-auto md:w-2/3">
+		<div class="page-section--inner bg-white p-10 pb-40 md:p-20 md:pb-40 shadow col-start-1 col-end-13 text-center relative">
+		  	<h3 class="text-5xl mb-10 font-serif">
+                Where
+            </h3>
+		  	<p class="text-2xl">HATHERLEY MANOR HOTEL &amp; SPA<br>
+                There are a number of hotels<br>
+			    nearby but we would recommend<br>
+			    staying at the hotel with us.
+            </p>
+            <div class="pumpkin-2 absolute left-0 bottom-0 transform translate-y-16 -mt-12 w-60 h-60 bg-contain bg-no-repeat">
+                {{ partial:snippets/background_image image="assets/pumpkin-2.png" class="pumpkin-2" }}
+            </div>
+		</div>
+	</div>
+
+	<div class="page-section grid grid-cols-12 mb-40 mr-auto ml-auto md:w-2/3">
+		<div class="page-section--inner bg-white p-10 pb-40 md:p-20 md:pb-40 shadow col-start-1 col-end-13 text-center relative">
+		  	<h3 class="text-5xl mb-10 font-serif">
+                Gifts
+            </h3>
+		  	<p class="text-2xl">You being there with us on the day<br>
+			is the best gift we could ask for.<br>
+			But if you insist we’re not fussy.<br>
+			money, vouchers, experiences or something nice for the house<br>
+			Surprise us!</p>
+			<div class="pumpkin-1 absolute right-0 bottom-0 transform translate-y-16 -mt-12 w-60 h-60 bg-contain bg-no-repeat">
+                {{ partial:snippets/background_image image="assets/pumpkin-1.png" class="pumpkin-1" }}
+            </div>
+		</div>
+	</div>
+
+	<div class="page-section grid grid-cols-12 mb-40 mr-auto ml-auto md:w-3/4">
+		<div class="page-section--inner bg-white p-10 pb-40 md:p-14 md:pb-32 shadow col-start-1 col-end-13 text-center relative">
+		  	<h3 class="text-5xl font-serif mb-10">
+                Food
+            </h3>
+		  	<p class="text-2xl mb-4">We will be serving a three course meal on the day at the venue<br>
+			with Canapés &amp; a winter Pimm's drink on arrival.<br>
+			If you have any special dietary requirements, please let us know.</p>
+            <p class="text-2xl">A glass of prosecco will be provided for the toast<br>
+                as well as a complimentary glass of wine to<br>
+                enjoy with your meal.</p>
+		  	<div class="page-section-inner-subsection mt-20">
+				<h4 class="text-3xl font-serif mb-5">Canapés</h4>
+				<ul class="list-none mb-12 text-2xl">
+			  		<li>Mini Yorkshires with Beef &amp; Horseradish</li>
+			  		<li>Goats Cheese Crostini with Red Onion Marmalade (v)</li>
+			  		<li>Arancini Balls (v)</li>
+				</ul>
+		  	</div>
+		  	<div class="page-section-inner-subsection mt-20">
+				<h4 class="text-3xl font-serif mb-5">Starter</h4>
+				<ul class="list-none mb-12 text-2xl">
+			  		<li>Chicken &amp; Ham Terrine, Mustard Dressing, Toasted Brioche</li>
+			  		<li>Vegetarian: Goats Cheese Tart with Balsamic Leaves</li>
+			  		<li>Children (Under 12): Cheesy garlic bread</li>
+				</ul>
+		  	</div>
+		  	<div class="page-section-inner-subsection mt-20">
+				<h4 class="text-3xl font-serif mb-5">Main</h4>
+				<ul class="list-none mb-12 text-2xl">
+                    <li>Slow Roast Shin of Beef, Root Vegetables, Mash Potato &amp; Red Wine Sauce</li>
+			  		<li>Vegetarian: Baked Mediterranean vegetable strudel, tomato &amp; red pepper coulis</li>
+                    <li>Children (Under 12): Homemade cheese &amp; tomato pizza, chipped potatoes &amp; beans</li>
+				</ul>
+		  	</div>
+		  	<div class="page-section-inner-subsection mt-20">
+				<h4 class="text-3xl font-serif mb-5">Pudding</h4>
+				<ul class="list-none mb-12 text-2xl">
+			  		<li>Sweet Mincemeat &amp; Meringue Tart. Orange &amp; Lemon Cream Sauce</li>
+                    <li>Children (Under 12): Vanilla ice-cream with wafer and sprinkles</li>
+				</ul>
+		  	</div>
+            <div class="pumpkin-3 absolute left-1/2 bottom-0 transform  -translate-x-1/2 translate-y-16 -mt-12 w-64 h-64 bg-contain bg-no-repeat">
+                {{ partial:snippets/background_image image="assets/pumpkin-3.png" class="pumpkin-3" }}
+            </div>
+		</div>
+	</div>
+
+    <div class="page-section grid grid-cols-12 mb-40 mr-auto ml-auto md:w-2/3">
+		<div class="page-section--inner bg-white p-10 pb-40 md:p-20 md:pb-40 shadow col-start-1 col-end-13 text-center relative">
+		  	<h3 class="text-5xl mb-10 font-serif">
+                Additional Information
+            </h3>
+            <h4 class="text-3xl font-serif mb-5">Music</h4>
+		  	<p class="text-2xl mb-1√0">
+                We will be having a live band <a href="http://www.thecityfolk.co.uk/" target="_blank">(The City Folk)</a><br>
+			    play 2 x 45 minute sets with<br>
+			    a DJ after for those party vibes.
+            </p>
+            <h4 class="text-3xl font-serif mb-5">Photography</h4>
+		  	<p class="text-2xl">
+                Photography will be handled by<br>
+			    The talented <a href="https://thereeljp.com/" target="_blank">Jack Pope.</a>
+            </p>
+            <div class="pumpkin-2 absolute left-0 bottom-0 transform translate-y-16 -mt-12 w-60 h-60 bg-contain bg-no-repeat">
+                {{ partial:snippets/background_image image="assets/pumpkin-2.png" class="pumpkin-2" }}
+            </div>
+		</div>
+	</div>
+
+</main>

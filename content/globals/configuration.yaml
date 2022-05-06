@@ -1,0 +1,5 @@
+title: Configuration
+data:
+  error_404_entry: home
+  copyright_since: 2020
+  privacy_statement_type: none

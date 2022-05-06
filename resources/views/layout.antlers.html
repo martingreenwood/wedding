@@ -1,0 +1,32 @@
+{{#
+	@name Layout
+	@desc The default layout file.
+#}}
+
+<!-- /layout.antlers.html -->
+<!doctype html>
+<html lang="{{ site:short_locale }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ mix src='css/site.css' }}">
+        <script src="{{ mix src='/js/site.js' }}" defer></script>
+        {{ partial:snippets/seo }}
+        {{ partial:snippets/browser_appearance }}
+    </head>
+    <body class="flex flex-col min-h-screen bg-gray-100 ">
+        {{ partial:snippets/noscript }}
+        {{ partial:navigation/skip_to_content }}
+        {{ partial:components/toolbar }}
+        {{ yield:seo_body }}
+
+        {{ partial:layout/header }}
+        {{ template_content }}
+        {{ partial:layout/footer }}
+    </body>
+</html>
+<!-- End: /layout.antlers.html -->

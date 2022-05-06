@@ -1,0 +1,18 @@
+{{#
+	@name Header
+	@desc The sites header rendered on each page.
+#}}
+<header class="fixed bottom-5 md:top-5 left-5 right-5 md:right-auto z-10">
+    {{ partial:navigation/main }}
+</header>
+
+<div class="w-full h-screen flex justify-center items-center">
+    <div class="wreath-intro w-full absolute inset-0 h-full pointer-events-none bg-contain bg-center bg-no-repeat">
+        {{ partial:snippets/background_image image="assets/wreath-min.png" class="wreath-intro" }}
+    </div>
+    <h1 class="flex flex-col items-center font-bold text-8xl transform -translate-y-20">
+        Katie
+        <span class="text-4xl">&amp;</span>
+        Martin
+    </h1>
+</div>
